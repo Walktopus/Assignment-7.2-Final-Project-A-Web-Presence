@@ -1,0 +1,63 @@
+<!--Walker Wilson 4/26/2026-->
+<!--Defines the doctype-->
+<!DOCTYPE html>
+<!--defines the language-->
+<html lang="en">
+    <!--header-->
+<head>
+    <!--character set-->
+    <meta charset="UTF-8">
+    <!--viewport scale-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css link-->
+    <link href="PlainStyles.css" rel="stylesheet">
+    <!--Javascript link-->
+    <script src = 'Checker Actions.js'></script>
+    <!--confirm sfx link-->
+    <audio id="yesSFX" src="Confirm.mp3"></audio>
+        <!--deny sfx link-->
+    <audio id="noSFX" src="Deny.mp3"></audio>
+    <!--title-->
+    <title>Plaindrome checker</title>
+    <!--end of header-->
+</head>
+<!--body of the webpage-->
+<body>
+    <!--This is the navagation section-->
+    <nav>
+        <a href="HomePage.html">HomePage</a>
+    </nav>
+    <p>
+        <br>
+        Please type in two words. Second word should be the first word spelled backwards
+    </p>
+    <!--This form contains the input boxes and buttons-->
+    <form id = "Palinput" onsubmit = "return false">
+        <p>
+        First word
+        </p>
+        <!--This is the first input-->
+    <input type="text" id="input1">
+    <!--Line break-->
+    <br>
+    <p>
+        Second word
+    </p>
+    <!--Second input-->
+    <input type="text" id="input2">
+    <!--Submit button-->
+    <input type = "submit" onclick = "checker();"/>
+    <!--Finished button-->
+    <input type = "button" value="Finished" onclick = "finished()"/>
+    <!--Results-->
+    <p id = "results">Results</p>
+    <!--Prompt-->
+    <p id = "finish"></p>
+    <!--Result image-->
+    <img id = "Result" src = "">
+    <!--End of form-->
+    </form>
+<!--End of body-->
+</body>
+<!--End of html-->
+</html>
